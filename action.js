@@ -64,10 +64,10 @@
 				content = '<p>La parola non è nel dizionario oppure ha più significati (le parole con più significati non sono compatibili al momento).</p>';
 			} else {
 				//remove existing paragraphs
-				content = content.replace(/<p>|<\/p>|·/g,"");
+				content = content.replace(/<p>|<\/p>|·|<br\/>/g,"");
 				
 				//make paragraphs for multiple definitions
-				content = content.replace(/<strong>[\d\s¶<br\/>]+<\/strong>/g,"</p><p>$&");
+				content = content.replace(/<strong>([\d\s¶]+)<\/strong>/g,"</p><p class='definizione'><strong class='numero'>$1</strong>");
 				
 				content += '<footer>fonte: sapere.it</a></footer>';
 			}

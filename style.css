@@ -12,9 +12,6 @@ body{
 	padding: 0;
 	margin: 0;
 }
-br{
-	display: none !important; 
-}
 
 p{
 	margin: 0;
@@ -52,7 +49,14 @@ h2{
 	font-size: 1em;
 	font-variant: small-caps;
 }
-#definition p strong{
+.definizione{
+	margin-top: 0;
+	padding-left: 1em;
+	margin-bottom: 1.3em;
+	margin-bottom: 0;
+}
+
+.numero{
 	width: 0;
 	height: 0;
 	text-indent: -1.5em;
@@ -60,10 +64,4 @@ h2{
 	text-align: right;
 	position: relative;
 	left: -.3em;
-}
-#definition div p{
-	margin-top: 0;
-	padding-left: 1em;
-	margin-bottom: 1.3em;
-	margin-bottom: 0;
 }
