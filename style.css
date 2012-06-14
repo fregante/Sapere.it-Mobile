@@ -65,3 +65,7 @@ h2{
 	position: relative;
 	left: -.3em;
 }
+footer {
+	margin-top: 2em;
+	font-size: .8em;
+}

@@ -21,9 +21,9 @@
 	}
 	
 	B.input.listen = function () {
-//		B.input.get().on('input', function (e) {
-//			B.input.word = B.input.$.val();
-//		});
+		B.input.get().on('focus', function (e) {
+			this.form.reset(); 
+		});
 
 		$('#ios-search-button-only-form').submit(function (e) {
 			e.preventDefault();
@@ -69,7 +69,7 @@
 				//make paragraphs for multiple definitions
 				content = content.replace(/<strong>([\d\s¶]+)<\/strong>/g,"</p><p class='definizione'><strong class='numero'>$1</strong>");
 				
-				content += '<footer>fonte: sapere.it</a></footer>';
+				content += '<footer><p>fonte: sapere.it</p><p><a href="mailto:apps@bfred.it?subject=Problemi%20con%20la%20parola%20'+encodeURIComponent(B.input.word)+'">Segnala problemi con questa parola</a></p></footer>';
 			}
 		} else {
 			content = '<p>Qualcosa non ha funzionato. Controlla che la parola inserita sia corretta e che Internet sia attivo. Se continua a non funzionare probabilmente si è rotta qualcosa.</p>'
