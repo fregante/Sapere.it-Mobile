@@ -1,0 +1,69 @@
+html {
+	background-color: #f1eee5;
+	color: #573920;
+	font: 1.2em/1.3em Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+	padding: .4em;
+	margin: 0;
+}
+.loading {
+	color: #a1836a;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+br{
+	display: none !important; 
+}
+
+p{
+	margin: 0;
+}
+a {
+	color: inherit;
+}
+#word-input {
+float: right;
+	width: 10%;
+	min-width: 5em;
+	font-size: inherit;
+	color: #f1eee5;
+	-webkit-transition: width .4s;
+	text-transform: none;
+} 
+#word-input:focus {
+	color: #573920;
+	width: 100%;
+}
+::-webkit-input-placeholder {
+	color: #c5bb9e;
+}
+
+h1, h2{
+	font-size: 1.5em;
+	line-height: normal;
+	margin: 0;
+	font-weight: normal;
+	text-transform: lowercase;
+	hyphens: auto;
+}
+h2{
+	margin-top: 1em;
+	font-size: 1em;
+	font-variant: small-caps;
+}
+#definition p strong{
+	width: 0;
+	height: 0;
+	text-indent: -1.5em;
+	display: block;
+	text-align: right;
+	position: relative;
+	left: -.3em;
+}
+#definition div p{
+	margin-top: 0;
+	padding-left: 1em;
+	margin-bottom: 1.3em;
+	margin-bottom: 0;
+}
