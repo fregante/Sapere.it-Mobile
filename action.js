@@ -3,7 +3,7 @@
 	
 	B.constants = {};
 	
-	//indirizzo per prendere la defininizione da Sapere.it
+	//indirizzo per prendere la definizione da Sapere.it
 	B.constants.URL = "http://query.yahooapis.com/v1/public/yql?q=use%20'http%3A%2F%2Fwww.datatables.org%2Fdata%2Fhtmlstring.xml'%20as%20data.html%3B%20select%20*%20from%20data.html%20where%20url%3D'http%3A%2F%2Fwww.sapere.it%2Fsapere%2Fdizionari%2Fdizionari%2FItaliano%2FX%2FX%2FX.html'%20and%20xpath%3D%22%2F%2Fdiv%5B%40id%3D'main'%5D%2F%2Fdiv%5Bcontains(%40class%2C'p_text')%5D%2F%2Fdiv%7C%2F%2Fdiv%5B%40id%3D'main'%5D%2F%2Fh2%7C%2F%2Fdiv%5B%40id%3D'main'%5D%2F%2Fh1%22&format=json&callback=?";
 	
 	//cache di $('html')
