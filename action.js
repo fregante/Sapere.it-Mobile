@@ -72,7 +72,7 @@
 				content = content.replace(/<strong>([\d\s¶]+)<\/strong>/g,"</p><p class='definizione'><strong class='numero'>$1</strong>");
 				
 				//aggiungi fonte e segnalazione problemi
-				content += '<footer><p>fonte: sapere.it</p><p><a href="mailto:apps@bfred.it?subject=Problemi%20con%20la%20parola%20'+encodeURIComponent(B.input.word)+'">Segnala problemi con questa parola</a></p></footer>';
+				content += '<footer><p>fonte: sapere.it</p><p><a href="https://github.com/bfred-it/Sapere.it-Mobile/issues/new?title=Problemi%20con%20la%20parola%20'+encodeURIComponent(B.input.word)+'">Segnala problemi con questa parola</a></p></footer>';
 			}
 		} else {
 			content = '<p>Qualcosa non ha funzionato. Controlla che la parola inserita sia corretta e che Internet sia attivo. Se continua a non funzionare probabilmente si è rotta qualcosa.</p>'
