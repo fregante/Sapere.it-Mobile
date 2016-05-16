@@ -82,6 +82,7 @@
 		result.innerHTML = content;
 		
 		B.definition.display( $(result) );
+		B.input.$.val('');
 	};
 	
 	//visualizza i dati ricevuti da sapere.it
