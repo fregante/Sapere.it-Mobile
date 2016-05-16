@@ -27,6 +27,7 @@ a {
 	text-transform: none;
 	display: block;
 	margin-bottom: 10px;
+	font-family: inherit;
 	
 	-webkit-appearance: none;
 	background: none;
@@ -39,7 +40,7 @@ a {
 	border-bottom-color: inherit;
 } 
 ::-webkit-input-placeholder {
-	color: inherit;
+	color: #c5bb9e;
 }
 
 h1, h2{
