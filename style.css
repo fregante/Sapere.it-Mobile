@@ -19,21 +19,27 @@ p{
 a {
 	color: inherit;
 }
+
 #word-input {
-float: right;
-	width: 10%;
-	min-width: 5em;
-	font-size: inherit;
-	color: #f1eee5;
-	-webkit-transition: width .4s;
+	color: #c5bb9e;
+	width: 100%;
+	font-size: 1.5em;
 	text-transform: none;
+	display: block;
+	margin-bottom: 10px;
+	
+	-webkit-appearance: none;
+	background: none;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #c5bb9e;
 } 
 #word-input:focus {
 	color: #573920;
-	width: 100%;
-}
+	border-bottom-color: inherit;
+} 
 ::-webkit-input-placeholder {
-	color: #c5bb9e;
+	color: inherit;
 }
 
 h1, h2{
@@ -54,6 +60,10 @@ h2{
 	padding-left: 1em;
 	margin-bottom: 1.3em;
 	margin-bottom: 0;
+}
+#definition div span { /* reset inline styles */
+	float: none !important;
+	height: auto !important;
 }
 
 .numero{
